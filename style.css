@@ -46,6 +46,7 @@ header nav a {
   font-weight: 700;
 }
 #welcome h1 {
+  padding-top: 200px;
   color: #ffffff;
   font-size: 32px;
   font-style: italic;
@@ -55,6 +56,9 @@ header nav a {
   font-size: 72px;
   padding-bottom: 70px;
 }
+#welcome h5 {
+  font-size: 20px;
+}
 #welcome .textbox {
   display: flex;
   justify-content: center;
@@ -62,7 +66,7 @@ header nav a {
   width: 800px;
 }
 #welcome .btn {
-  padding: 20px 40px;
+  padding: 20px 60px;
   margin: 0 0 180px;
   background-color: #ffc800;
 }
@@ -88,7 +92,7 @@ header nav a {
 }
 #services .textbox h4, #services .textbox h5 {
   color: #6c757d;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
 }
 #services .icon {
@@ -186,4 +190,88 @@ header nav a {
 }
 #about .box {
   display: flex;
+}
+#about .box .imgbox {
+  z-index: 4;
+  width: 170px;
+  height: 170px;
+  border: 5px solid #e9ecef;
+  border-radius: 100%;
+}
+
+#team {
+  background-color: #f8f9fa;
+}
+#team h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px 0 25px;
+}
+#team h3 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 15px 0 50px;
+  color: #6c757d;
+}
+#team h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#team h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+}
+#team h5 {
+  text-align: center;
+  width: 810px;
+  font-size: 19px;
+  margin-top: 25px;
+  color: #6c757d;
+}
+#team img {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 220px;
+  border: 8px solid #dfe0e1;
+  border-radius: 100%;
+}
+#team .icon {
+  display: flex;
+  justify-content: center;
+}
+#team .icon .minibox {
+  margin: 10px 10px 25px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #212529;
+  border: 1px solid #212529;
+  border-radius: 100%;
+}
+#team .icon .minibox:hover {
+  background-color: #424649;
+  cursor: pointer;
+}
+
+#ads {
+  margin: -40px 0;
+}
+#ads .ms {
+  width: 200px;
+}
+#ads .google {
+  width: 120px;
+}
+#ads .fb {
+  width: 160px;
+}
+#ads .ibm {
+  width: 110px;
 }/*# sourceMappingURL=style.css.map */
