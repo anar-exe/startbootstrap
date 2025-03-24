@@ -33,7 +33,7 @@ header nav a {
 
 #welcome {
   padding: 200px 0;
-  background-image: url(/assets/1.jpg);
+  background-image: url("/assets/1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -259,6 +259,9 @@ header nav a {
   background-color: #424649;
   cursor: pointer;
 }
+#team .icon .minibox:hover i {
+  cursor: pointer;
+}
 
 #ads {
   margin: -40px 0;
@@ -274,4 +277,18 @@ header nav a {
 }
 #ads .ibm {
   width: 110px;
+}
+#ads img:hover {
+  cursor: pointer;
+}
+
+#contact .bg {
+  background-image: url("/assets/16.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#contact h1 {
+  font-size: 40px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
