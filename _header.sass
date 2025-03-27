@@ -1,12 +1,9 @@
 header
-    position: sticky
-    top: -1px
+    position: fixed
     z-index: 9
     width: 100%
-    background-color: transparent
+    background-color: #212529
     padding: 20px 0
-        padding: 20px
-        background-color: #212529
     .imgbox
         display: flex
         align-items: center
@@ -18,8 +15,9 @@ header
         width: 100%
         display: flex
         justify-content: space-between
+        .responsive
+            display: none
     nav
-        // margin-left: 200px
         padding: 10px
         a
             letter-spacing: 3px
@@ -31,3 +29,34 @@ header
             &:hover
                 cursor: pointer
                 color: #ffc800
+
+    @media (max-width: 992px)
+        position: fixed
+        z-index: 9
+        width: 100%
+        background-color: #212529
+        // padding: 10px 0
+        .imgbox
+            display: flex
+            justify-content: space-between
+            width: 140px
+            img
+                &:hover
+                    cursor: pointer
+        .navbar
+            // width: 100%
+            // display: flex
+            // justify-content: center
+            .responsive
+                padding: 12px
+                display: flex
+
+                width: 100px
+                height: 35px
+                border: 1px solid#9b9d9e99
+                border-radius: 10%
+                font-size: 12px
+                h5
+                    display: block
+            nav
+                display: none
