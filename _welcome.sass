@@ -1,5 +1,4 @@
 #welcome
-    padding: 100px 0
     background-image: url(/assets/1.jpg)
     background-size: 100%
     background-position: center center
@@ -10,23 +9,26 @@
     h2,h5
         font-weight: 700
     h1
-        padding-top: 160px
+        padding-top: 275px
         color: #ffffff
         font-size: 40px
         font-style: italic
         margin-bottom: 32px
+        letter-spacing: 2px
     h2
         font-size: 72px
-        padding-bottom: 70px
+        padding-bottom: 53px
         word-spacing: 25px
+        letter-spacing: 2px
     .textbox
+        margin: 0 auto
         display: flex
         justify-content: center
         flex-wrap: wrap
         width: 800px
     .btn
-        padding: 18px 40px
-        margin: 5px 0 80px
+        padding: 17px 40px
+        margin: 5px 0 198px
         background-color: #ffc800
         h5
             font-size: 22px
@@ -34,3 +36,19 @@
         &:hover
             h5
                 cursor: pointer
+
+    @media (max-width: 992px)
+        background-size: cover
+    @media (max-width: 768px)
+        background-size: center center
+        background-position: center center
+        h1
+            padding-top: 170px
+            font-size: 24px
+        h2
+            font-size: 52px
+            padding-bottom: 20px
+        .btn
+            margin: 5px 0 96px
+    @media (min-width: 576px)
+        margin: auto auto

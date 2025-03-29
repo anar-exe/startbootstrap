@@ -7,78 +7,77 @@ body {
   width: 100%;
 }
 
+div {
+  overflow: hidden;
+  max-width: 100%;
+}
+
 header {
+  padding: 29px 0;
   position: fixed;
-  z-index: 9;
+  z-index: 3;
   width: 100%;
+  max-width: 100vw;
   background-color: #212529;
-  padding: 20px 0;
 }
 header .imgbox {
-  display: flex;
-  align-items: center;
-  width: 185px;
+  width: 187px;
+}
+header .imgbox img {
+  margin: 5px 0px -5px 0px;
 }
 header .imgbox img:hover {
   cursor: pointer;
 }
-header .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-header .navbar .responsive {
+header .menu {
   display: none;
 }
 header nav {
-  padding: 10px;
+  display: flex;
+  padding: 10px 0;
 }
 header nav a {
-  letter-spacing: 3px;
-  padding: 8px;
-  margin: 0 0 0 5px;
   font-weight: 100;
-  font-size: 17px;
-  transition: 0.5s;
+  margin-left: 35px;
+  letter-spacing: 2px;
 }
 header nav a:hover {
-  cursor: pointer;
   color: #ffc800;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   header {
-    position: fixed;
-    z-index: 9;
+    overflow-x: hidden;
+    padding: 21px 0;
     width: 100%;
-    background-color: #212529;
+    max-width: 992px;
+  }
+  header nav {
+    display: none;
   }
   header .imgbox {
-    display: flex;
-    justify-content: space-between;
-    width: 140px;
+    width: 150px;
   }
-  header .imgbox img:hover {
-    cursor: pointer;
-  }
-  header .navbar .responsive {
+  header .menu {
     padding: 12px;
     display: flex;
-    width: 100px;
-    height: 35px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    height: 36px;
     border: 1px solid rgba(155, 157, 158, 0.6);
     border-radius: 10%;
     font-size: 12px;
+    color: #9b9d9e;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
-  header .navbar .responsive h5 {
-    display: block;
-  }
-  header .navbar nav {
-    display: none;
+  header .menu .icon {
+    color: #9b9d9e;
   }
 }
 
 #welcome {
-  padding: 100px 0;
   background-image: url(/assets/1.jpg);
   background-size: 100%;
   background-position: center center;
@@ -92,26 +91,29 @@ header nav a:hover {
   font-weight: 700;
 }
 #welcome h1 {
-  padding-top: 160px;
+  padding-top: 275px;
   color: #ffffff;
   font-size: 40px;
   font-style: italic;
   margin-bottom: 32px;
+  letter-spacing: 2px;
 }
 #welcome h2 {
   font-size: 72px;
-  padding-bottom: 70px;
+  padding-bottom: 53px;
   word-spacing: 25px;
+  letter-spacing: 2px;
 }
 #welcome .textbox {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 800px;
 }
 #welcome .btn {
-  padding: 18px 40px;
-  margin: 5px 0 80px;
+  padding: 17px 40px;
+  margin: 5px 0 198px;
   background-color: #ffc800;
 }
 #welcome .btn h5 {
@@ -121,30 +123,56 @@ header nav a:hover {
 #welcome .btn:hover h5 {
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  #welcome {
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  #welcome {
+    background-size: center center;
+    background-position: center center;
+  }
+  #welcome h1 {
+    padding-top: 170px;
+    font-size: 24px;
+  }
+  #welcome h2 {
+    font-size: 52px;
+    padding-bottom: 20px;
+  }
+  #welcome .btn {
+    margin: 5px 0 96px;
+  }
+}
 
 #services {
   padding: 100px 0;
 }
-#services .textbox h1 {
+#services h1 {
   font-size: 50px;
+  font-weight: 700;
   padding-bottom: 30px;
+}
+#services h4 {
+  margin: 0 0 60px;
+  font-style: italic;
+  color: #6c757d;
+  font-size: 19px;
+  font-weight: 500;
+}
+#services .textbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #services .textbox h3 {
   margin: 16px 0;
   font-size: 28px;
-}
-#services .textbox h4 {
-  margin: 0 0 60px;
-  font-style: italic;
+  font-weight: 700;
 }
 #services .textbox h5 {
   line-height: 1.75;
-  width: 390px;
-}
-#services .textbox h1, #services .textbox h3 {
-  font-weight: 700;
-}
-#services .textbox h4, #services .textbox h5 {
   color: #6c757d;
   font-size: 19px;
   font-weight: 500;
@@ -162,9 +190,14 @@ header nav a:hover {
   font-size: 65px;
   color: #ffffff;
 }
-@media (max-width: 992px) {
-  #services .responsive {
-    width: 240px;
+@media (min-width: 576px) {
+  #services .textbox {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  #services .textbox {
+    margin-bottom: 20px;
   }
 }
 

@@ -1,21 +1,25 @@
 #services
     padding: 100px 0
+    h1
+        font-size: 50px
+        font-weight: 700
+        padding-bottom: 30px
+    h4
+        margin: 0 0 60px
+        font-style: italic
+        color: #6c757d
+        font-size: 19px
+        font-weight: 500
     .textbox
-        h1
-            font-size: 50px
-            padding-bottom: 30px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
         h3
             margin: 16px 0
             font-size: 28px
-        h4
-            margin: 0 0 60px
-            font-style: italic
+            font-weight: 700
         h5
             line-height: 1.75
-            width: 390px
-        h1,h3
-            font-weight: 700
-        h4,h5
             color: #6c757d
             font-size: 19px
             font-weight: 500
@@ -30,6 +34,9 @@
         i
             font-size: 65px
             color: #ffffff
-    @media (max-width: 992px)
-        .responsive
-            width: 240px
+    @media (min-width: 576px) an
+        .textbox
+            margin-bottom: 20px
+    @media (max-width: 576px)
+        .textbox
+            margin-bottom: 20px
