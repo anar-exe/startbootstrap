@@ -575,4 +575,27 @@ footer .icon .minibox:hover {
 }
 footer .icon .minibox:hover i {
   cursor: pointer;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .textbox {
+    display: flex;
+    justify-content: center;
+  }
+  footer nav {
+    display: flex;
+    justify-content: center;
+  }
+  footer nav a {
+    padding: 0 7px;
+  }
+}
+@media (min-width: 992px) {
+  footer nav {
+    display: flex;
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=style.css.map */
