@@ -295,15 +295,17 @@ header nav a:hover {
   font-weight: 500;
 }
 #about .left {
-  left: 115px;
+  text-align: end;
+  left: 120px;
 }
 #about .right {
+  text-align: start;
   left: 780px;
 }
 #about .imgbox {
-  position: absolute;
-  left: 675px;
-  top: 50px;
+  position: relative;
+  left: 36.5vw;
+  bottom: 185px;
   width: 170px;
   height: 170px;
   border: 7px solid #e9ecef;
@@ -313,7 +315,8 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
+  left: 36.5vw;
   width: 170px;
   height: 170px;
   background-color: #ffc800;
@@ -327,8 +330,60 @@ header nav a:hover {
   font-weight: 700;
   line-height: 1.3;
 }
-#about ul li {
-  margin: 0 0 120px;
+@media (min-width: 992px) and (max-width: 1199px) {
+  #about .textbox {
+    width: 340px;
+  }
+  #about .left {
+    left: 20px;
+  }
+  #about .right {
+    left: 620px;
+  }
+  #about .imgbox {
+    width: 150px;
+    height: 150px;
+    bottom: 240px;
+  }
+  #about .minibox {
+    width: 150px;
+    height: 150px;
+    bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #about .imgbox {
+    width: 95px;
+    height: 95px;
+    top: 10px;
+  }
+  #about .minibox {
+    width: 95px;
+    height: 95px;
+  }
+  #about .textbox {
+    width: 230px;
+  }
+  #about .left {
+    left: 0;
+  }
+  #about .right {
+    left: 470px;
+  }
+}
+@media (max-width: 768px) {
+  #about .textbox {
+    display: flex;
+    text-align: left;
+  }
+  #about .right {
+    left: 120px;
+  }
+  #about .imgbox {
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
 }
 
 #team {

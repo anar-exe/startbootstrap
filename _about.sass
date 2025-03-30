@@ -24,14 +24,16 @@
             font-size: 19px
             font-weight: 500
     .left
-        left: 115px
+        text-align: end
+        left: 120px
     .right
+        text-align: start
         left: 780px
     .imgbox
-        position: absolute
-        left: 675px
-        // top: 352px
-        top: 50px
+        position: relative
+        left: 36.5vw
+        // left: 560px
+        bottom: 185px
         width: 170px
         height: 170px
         border: 7px solid #e9ecef
@@ -40,7 +42,9 @@
         display: flex
         justify-content: center
         align-items: center
-        position: absolute
+        position: relative
+        left: 36.5vw
+        // left: 560px
         width: 170px
         height: 170px
         background-color: #ffc800
@@ -55,4 +59,56 @@
 
     ul
         li
-            margin: 0 0 120px
+    @media (min-width: 992px) and (max-width: 1199px)
+        .textbox
+            width: 340px
+        .left
+            left: 20px
+        .right
+            left: 620px
+        .imgbox
+            width: 150px
+            height: 150px
+            bottom: 240px
+        .minibox
+            width: 150px
+            height: 150px
+            bottom: 10px
+            // width: 150px
+            // height: 150px
+            // bottom: 10px
+            // left: 400px
+
+        // ul
+        //     li
+        //         min-width: 992px
+        //         max-width: 1199px
+        // .imgbox
+        //     left: 50%
+    @media (min-width: 768px) and (max-width: 992px)
+        .imgbox
+            width: 95px
+            height: 95px
+            top: 10px
+        .minibox
+            width: 95px
+            height: 95px
+        .textbox
+            width: 230px
+        .left
+            left: 0
+        .right
+            left: 470px
+
+    @media (max-width: 768px)
+        .textbox
+            display: flex
+            text-align: left
+        .right
+            left: 120px
+        .imgbox
+            width: 80px
+            height: 80px
+            left: 0
+        li
+            margin
