@@ -80,70 +80,94 @@ header nav {
 
 #welcome {
   background-image: url(/assets/1.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
-#welcome h1, #welcome h2, #welcome h5 {
-  text-align: center;
-  color: #ffffff;
+#welcome .box {
+  margin-top: 50px;
 }
-#welcome h2, #welcome h5 {
-  font-weight: 700;
-}
-#welcome h1 {
-  padding-top: 275px;
+#welcome .box .textbox h1 {
   color: #ffffff;
   font-size: 40px;
   font-style: italic;
-  margin-bottom: 32px;
   letter-spacing: 2px;
 }
-#welcome h2 {
+#welcome .box .textbox h2 {
+  color: #ffffff;
   font-size: 72px;
-  padding-bottom: 53px;
+  font-weight: 700;
   word-spacing: 25px;
   letter-spacing: 2px;
 }
-#welcome .textbox {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 800px;
+#welcome .box .textbox .margin {
+  margin-top: 20px;
 }
-#welcome .btn {
+#welcome .box .btn {
+  color: #ffffff;
+  font-weight: 700;
   padding: 17px 40px;
-  margin: 5px 0 198px;
+  margin: 70px 0 0;
   background-color: #ffc800;
 }
-#welcome .btn h5 {
+#welcome .box .btn h5 {
   font-size: 22px;
   word-spacing: 5px;
 }
-#welcome .btn:hover h5 {
+#welcome .box .btn:hover h5 {
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #welcome {
-    background-size: center center;
-    background-position: center center;
+    min-height: 55vh;
   }
-  #welcome h1 {
-    padding-top: 170px;
+  #welcome .box .textbox {
+    margin-top: 20px;
+  }
+  #welcome .box .textbox h1 {
     font-size: 24px;
   }
-  #welcome h2 {
-    font-size: 52px;
-    padding-bottom: 20px;
+  #welcome .box .textbox h2 {
+    font-size: 50px;
   }
-  #welcome .btn {
-    margin: 5px 0 96px;
+  #welcome .box .btn {
+    margin-top: 15px;
   }
 }
 @media (min-width: 576px) {
   #welcome {
-    margin: auto auto;
+    min-height: 50vh;
+  }
+  #welcome .box .textbox h1 {
+    font-size: 24px;
+  }
+  #welcome .box .textbox h2 {
+    font-size: 50px;
+  }
+  #welcome .box .btn {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #welcome {
+    min-height: 80vh;
+  }
+  #welcome .box .textbox h1 {
+    font-size: 36px;
+  }
+  #welcome .box .textbox h2 {
+    font-size: 70px;
+  }
+  #welcome .box .btn {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 992px) {
+  #welcome {
+    min-height: 100vh;
   }
 }
 
@@ -156,11 +180,13 @@ header nav {
   padding-bottom: 30px;
 }
 #services h4 {
-  margin: 0 0 60px;
   font-style: italic;
   color: #6c757d;
   font-size: 18px;
   font-weight: 500;
+}
+#services .text {
+  margin-bottom: 60px;
 }
 #services .textbox {
   display: flex;
@@ -196,13 +222,15 @@ header nav {
   padding: 100px 0;
   background-color: #f8f9fa;
 }
+#portfolio .textbox {
+  margin-bottom: 64px;
+}
 #portfolio .textbox h1 {
   margin-bottom: 16px;
   font-size: 45px;
   font-weight: 700;
 }
 #portfolio .textbox h4 {
-  margin-bottom: 64px;
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
@@ -357,23 +385,24 @@ header nav {
   padding: 100px 0;
   background-color: #f8f9fa;
 }
+#team .textbox {
+  margin: 20px 0 50px;
+}
 #team .textbox h1 {
   font-size: 40px;
   font-weight: 700;
-  margin: 20px 0 25px;
+  margin: 0 0 40px;
 }
 #team .textbox h3 {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
-  margin: 15px 0 50px;
   color: #6c757d;
 }
 #team .textbox h5 {
   text-align: center;
   width: 810px;
   font-size: 19px;
-  margin-top: 25px;
   color: #6c757d;
   line-height: 1.5;
 }
@@ -387,6 +416,9 @@ header nav {
   font-size: 18px;
   color: #6c757d;
   font-weight: 400;
+}
+#team .textbox {
+  margin-top: 25px;
 }
 #team img {
   margin-bottom: 20px;
@@ -445,8 +477,10 @@ header nav {
   background-position: center -10px;
   background-repeat: no-repeat;
 }
+#contact .textbox {
+  margin: 100px 0 65px;
+}
 #contact h1 {
-  margin: 105px 0 0;
   word-spacing: 8px;
   color: #ffffff;
   font-size: 50px;
@@ -458,7 +492,6 @@ header nav {
   font-weight: 400;
   font-style: italic;
   margin-top: 25px;
-  margin: 25px 0 65px;
 }
 #contact h5 {
   font-size: 22px;
@@ -481,6 +514,8 @@ header nav {
   opacity: 0.3;
 }
 #contact .box input {
+  display: flex;
+  align-items: flex-start;
   padding: 20px 420px 200px 25px;
   font-size: 20px;
   font-weight: 700;

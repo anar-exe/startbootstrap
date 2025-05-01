@@ -1,51 +1,69 @@
 #welcome
     background-image: url(/assets/1.jpg)
-    background-size: 100%
+    background-size: cover
     background-position: center center
     background-repeat: no-repeat
-    h1,h2,h5
-        text-align: center
-        color: #ffffff
-    h2,h5
-        font-weight: 700
-    h1
-        padding-top: 275px
-        color: #ffffff
-        font-size: 40px
-        font-style: italic
-        margin-bottom: 32px
-        letter-spacing: 2px
-    h2
-        font-size: 72px
-        padding-bottom: 53px
-        word-spacing: 25px
-        letter-spacing: 2px
-    .textbox
-        margin: 0 auto
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
-        width: 800px
-    .btn
-        padding: 17px 40px
-        margin: 5px 0 198px
-        background-color: #ffc800
-        h5
-            font-size: 22px
-            word-spacing: 5px
-        &:hover
-            h5
-                cursor: pointer
-    @media (max-width: 768px)
-        background-size: center center
-        background-position: center center
-        h1
-            padding-top: 170px
-            font-size: 24px
-        h2
-            font-size: 52px
-            padding-bottom: 20px
+    min-height: 100vh
+    display: flex
+    align-items: center
+    .box
+        margin-top: 50px
+        .textbox
+            h1
+                color: #ffffff
+                font-size: 40px
+                font-style: italic
+                letter-spacing: 2px
+            h2
+                color: #ffffff
+                font-size: 72px
+                font-weight: 700
+                word-spacing: 25px
+                letter-spacing: 2px
+            .margin
+                margin-top: 20px
         .btn
-            margin: 5px 0 96px
-    @media (min-width: 576px)
-        margin: auto auto
+            color: #ffffff
+            font-weight: 700
+            padding: 17px 40px
+            margin: 70px 0 0
+            background-color: #ffc800
+            h5
+                font-size: 22px
+                word-spacing: 5px
+            &:hover
+                h5
+                    cursor: pointer
+    @media ( max-width: 576px )
+        min-height: 55vh
+        .box
+            .textbox
+                margin-top: 20px
+                h1
+                    font-size: 24px
+                h2
+                    font-size: 50px
+            .btn
+                margin-top: 15px
+    @media ( min-width: 576px )
+        min-height: 50vh
+        .box
+            .textbox
+                h1
+                    font-size: 24px
+                h2
+                    font-size: 50px
+            .btn
+                margin-top: 20px
+    @media ( min-width: 768px )
+        min-height: 80vh
+        .box
+            .textbox
+                h1
+                    font-size: 36px
+                h2
+                    font-size: 70px
+            .btn
+                margin-top: 70px
+    @media ( min-width: 992px )
+        min-height: 100vh
