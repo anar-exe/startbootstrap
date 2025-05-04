@@ -122,7 +122,7 @@ header nav {
 }
 @media (max-width: 576px) {
   #welcome {
-    min-height: 55vh;
+    min-height: 90vh;
   }
   #welcome .box .textbox {
     margin-top: 20px;
@@ -139,7 +139,7 @@ header nav {
 }
 @media (min-width: 576px) {
   #welcome {
-    min-height: 50vh;
+    min-height: 90vh;
   }
   #welcome .box .textbox h1 {
     font-size: 24px;
@@ -153,7 +153,7 @@ header nav {
 }
 @media (min-width: 768px) {
   #welcome {
-    min-height: 80vh;
+    min-height: 100vh;
   }
   #welcome .box .textbox h1 {
     font-size: 36px;
@@ -350,12 +350,100 @@ header nav {
   border: 7px solid #e9ecef;
   border-radius: 100%;
 }
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+@media (max-width: 576px) {
+  #about .box {
+    margin-bottom: 90px;
+  }
   #about .box .textbox {
     max-width: 320px;
   }
+  #about .box .left {
+    margin-right: 0;
+    margin-left: 100px;
+    text-align: start;
+  }
+  #about .box .right {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+  #about .box .imgbox {
+    top: 50px;
+    left: 40px;
+    width: 75px;
+    height: 75px;
+  }
+  #about .ending {
+    justify-content: flex-start;
+  }
+  #about .ending .minibox {
+    width: 75px;
+    height: 75px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 576px) {
+  #about .box {
+    margin-bottom: 90px;
+  }
+  #about .box .left {
+    margin-right: 0;
+    margin-left: 100px;
+    text-align: start;
+  }
+  #about .box .right {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+  #about .box .imgbox {
+    top: 50px;
+    left: 40px;
+    width: 75px;
+    height: 75px;
+  }
+  #about .ending {
+    justify-content: flex-start;
+  }
+  #about .ending .minibox {
+    width: 75px;
+    height: 75px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}
+@media (min-width: 768px) {
+  #about .box {
+    margin-bottom: 90px;
+  }
+  #about .box .textbox {
+    max-width: 230px;
+  }
+  #about .box .left {
+    margin-right: auto;
+    margin-left: 40px;
+    text-align: end;
+  }
+  #about .box .right {
+    margin-left: auto;
+    margin-right: 40px;
+    text-align: start;
+  }
+  #about .box .imgbox {
+    left: 50%;
+    top: 45px;
+    width: 90px;
+    height: 90px;
+  }
+  #about .ending {
+    justify-content: center;
+  }
+  #about .ending .minibox {
+    width: 90px;
+    height: 90px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) {
   #about .box .textbox {
     max-width: 310px;
   }
@@ -373,86 +461,40 @@ header nav {
   #about .ending .minibox {
     width: 140px;
     height: 140px;
+    font-size: 18px;
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 1200px) {
+  #about .box {
+    margin-bottom: 150px;
+  }
+  #about .box .imgbox {
+    top: 90px;
+    width: 170px;
+    height: 170px;
+  }
+  #about .box .left {
+    margin-left: 90px;
+  }
+  #about .box .right {
+    margin-right: 90px;
+  }
   #about .box .textbox {
-    max-width: 245px;
-    line-height: 1.7;
-  }
-  #about .box .left {
-    margin-left: 10px;
-  }
-  #about .box .right {
-    margin-right: 10px;
-  }
-  #about .box .imgbox {
-    top: 50px;
-    width: 100px;
-    height: 100px;
+    max-width: 360px;
   }
   #about .ending .minibox {
-    width: 100px;
-    height: 100px;
-    font-size: 15px;
+    top: 90px;
+    width: 170px;
+    height: 170px;
+    font-size: 20px;
   }
 }
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #about .box {
-    margin-bottom: 90px;
-  }
+@media (min-width: 1400px) {
   #about .box .left {
-    margin-right: 0;
-    margin-left: 100px;
-    text-align: start;
+    margin-left: 130px;
   }
   #about .box .right {
-    margin-right: 0;
-    margin-left: 100px;
-  }
-  #about .box .imgbox {
-    top: 50px;
-    left: 40px;
-    width: 75px;
-    height: 75px;
-  }
-  #about .ending {
-    justify-content: flex-start;
-  }
-  #about .ending .minibox {
-    width: 75px;
-    height: 75px;
-    font-size: 10px;
-    margin-left: 5px;
-  }
-}
-@media (max-width: 575.98px) {
-  #about .box {
-    margin-bottom: 90px;
-  }
-  #about .box .left {
-    margin-right: 0;
-    margin-left: 100px;
-    text-align: start;
-  }
-  #about .box .right {
-    margin-right: 0;
-    margin-left: 100px;
-  }
-  #about .box .imgbox {
-    top: 50px;
-    left: 40px;
-    width: 75px;
-    height: 75px;
-  }
-  #about .ending {
-    justify-content: flex-start;
-  }
-  #about .ending .minibox {
-    width: 75px;
-    height: 75px;
-    font-size: 10px;
-    margin-left: 5px;
+    margin-right: 130px;
   }
 }
 
@@ -476,7 +518,7 @@ header nav {
 }
 #team .textbox h5 {
   text-align: center;
-  width: 810px;
+  width: 600px;
   font-size: 19px;
   color: #6c757d;
   line-height: 1.5;
@@ -610,11 +652,6 @@ header nav {
 }
 #contact .btn:hover h5 {
   cursor: pointer;
-}
-@media (min-width: 576px) {
-  #contact {
-    background-position: center center;
-  }
 }
 
 footer h5 {

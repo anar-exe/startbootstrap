@@ -57,13 +57,77 @@
             font-weight: 700
             border: 7px solid #e9ecef
             border-radius: 100%
-
-    @media ( min-width: 1200px ) and ( max-width: 1399.98px )
+    @media ( max-width: 576px )
         .box
+            margin-bottom: 90px
             .textbox
                 max-width: 320px
-
-    @media ( min-width: 992px ) and ( max-width: 1199.98px )
+            .left
+                margin-right: 0
+                margin-left: 100px
+                text-align: start
+            .right
+                margin-right: 0
+                margin-left: 100px
+            .imgbox
+                top: 50px
+                left: 40px
+                width: 75px
+                height: 75px
+        .ending
+            justify-content: flex-start
+            .minibox
+                width: 75px
+                height: 75px
+                font-size: 10px
+                margin-left: 5px
+    @media ( min-width: 576px )
+        .box
+            margin-bottom: 90px
+            .left
+                margin-right: 0
+                margin-left: 100px
+                text-align: start
+            .right
+                margin-right: 0
+                margin-left: 100px
+            .imgbox
+                top: 50px
+                left: 40px
+                width: 75px
+                height: 75px
+        .ending
+            justify-content: flex-start
+            .minibox
+                width: 75px
+                height: 75px
+                font-size: 10px
+                margin-left: 5px
+    @media ( min-width: 768px )
+        .box
+            margin-bottom: 90px
+            .textbox
+                max-width: 230px
+            .left
+                margin-right: auto
+                margin-left: 40px
+                text-align: end
+            .right
+                margin-left: auto
+                margin-right: 40px
+                text-align: start
+            .imgbox
+                left: 50%
+                top: 45px
+                width: 90px
+                height: 90px
+        .ending
+            justify-content: center
+            .minibox
+                width: 90px
+                height: 90px
+                font-size: 10px
+    @media ( min-width: 992px )
         .box
             .textbox
                 max-width: 310px
@@ -79,65 +143,30 @@
             .minibox
                 width: 140px
                 height: 140px
-    @media ( min-width: 768px ) and ( max-width: 991.98px )
+                font-size: 18px
+
+    @media ( min-width: 1200px )
         .box
+            margin-bottom: 150px
+            .imgbox
+                top: 90px
+                width: 170px
+                height: 170px
+            .left
+                margin-left: 90px
+            .right
+                margin-right: 90px
             .textbox
-                max-width: 245px
-                line-height: 1.7
-            .left
-                margin-left: 10px
-            .right
-                margin-right: 10px
-            .imgbox
-                top: 50px
-                width: 100px
-                height: 100px
+                max-width: 360px
         .ending
             .minibox
-                width: 100px
-                height: 100px
-                font-size: 15px
-    @media ( min-width: 576px ) and ( max-width: 767.98px )
+                top: 90px
+                width: 170px
+                height: 170px
+                font-size: 20px
+    @media ( min-width: 1400px )
         .box
-            margin-bottom: 90px
             .left
-                margin-right: 0
-                margin-left: 100px
-                text-align: start
+                margin-left: 130px
             .right
-                margin-right: 0
-                margin-left: 100px
-            .imgbox
-                top: 50px
-                left: 40px
-                width: 75px
-                height: 75px
-        .ending
-            justify-content: flex-start
-            .minibox
-                width: 75px
-                height: 75px
-                font-size: 10px
-                margin-left: 5px
-    @media ( max-width: 575.98px )
-        .box
-            margin-bottom: 90px
-            .left
-                margin-right: 0
-                margin-left: 100px
-                text-align: start
-            .right
-                margin-right: 0
-                margin-left: 100px
-            .imgbox
-                top: 50px
-                left: 40px
-                width: 75px
-                height: 75px
-        .ending
-            justify-content: flex-start
-            .minibox
-                width: 75px
-                height: 75px
-                font-size: 10px
-                margin-left: 5px
+                margin-right: 130px
