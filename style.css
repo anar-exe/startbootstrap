@@ -468,10 +468,10 @@ header nav {
     max-width: 310px;
   }
   #about .box .left {
-    margin-left: 50px;
+    margin-left: 15%;
   }
   #about .box .right {
-    margin-right: 50px;
+    margin-right: 15%;
   }
   #about .box .imgbox {
     top: 70px;
@@ -482,39 +482,6 @@ header nav {
     width: 140px;
     height: 140px;
     font-size: 18px;
-  }
-}
-@media (min-width: 1200px) {
-  #about .box {
-    margin-bottom: 150px;
-  }
-  #about .box .imgbox {
-    top: 90px;
-    width: 170px;
-    height: 170px;
-  }
-  #about .box .left {
-    margin-left: 90px;
-  }
-  #about .box .right {
-    margin-right: 90px;
-  }
-  #about .box .textbox {
-    max-width: 360px;
-  }
-  #about .ending .minibox {
-    top: 90px;
-    width: 170px;
-    height: 170px;
-    font-size: 20px;
-  }
-}
-@media (min-width: 1400px) {
-  #about .box .left {
-    margin-left: 130px;
-  }
-  #about .box .right {
-    margin-right: 130px;
   }
 }
 
