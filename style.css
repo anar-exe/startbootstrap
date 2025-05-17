@@ -294,6 +294,13 @@ header nav {
 #portfolio .box .imgbox .opacity:hover i {
   cursor: pointer;
 }
+@media (max-width: 576px) {
+  #portfolio .box {
+    margin: 68px;
+    max-width: 415px;
+    height: 425px;
+  }
+}
 
 #about {
   margin: 110px 0;
@@ -468,19 +475,20 @@ header nav {
     max-width: 310px;
   }
   #about .box .left {
-    margin-left: 15%;
+    margin-left: 50px;
   }
   #about .box .right {
-    margin-right: 15%;
+    margin-right: 50px;
   }
   #about .box .imgbox {
-    top: 70px;
-    width: 140px;
-    height: 140px;
+    top: 100px;
+    width: 190px;
+    height: 190px;
   }
   #about .ending .minibox {
-    width: 140px;
-    height: 140px;
+    top: 100px;
+    width: 190px;
+    height: 190px;
     font-size: 18px;
   }
 }
