@@ -301,6 +301,11 @@ header nav {
     height: 425px;
   }
 }
+@media (max-width: 400px) {
+  #portfolio .box {
+    margin: 0 0 20px;
+  }
+}
 
 #about {
   margin: 110px 0;
